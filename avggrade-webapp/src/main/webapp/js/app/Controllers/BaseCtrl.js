@@ -1,5 +1,5 @@
 ﻿(function () {
-    angular.module('InvoiceApp').controller('BaseCtrl',
+    angular.module('AvgGradeApp').controller('BaseCtrl',
         function ($scope, appData) {
             $scope.appData = appData;
             $scope.resetMsg = function () {

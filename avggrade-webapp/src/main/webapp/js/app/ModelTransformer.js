@@ -1,5 +1,5 @@
 ﻿(function () {
-    angular.module('InvoiceApp').factory('modelTransformer', function modelTransformerFactory() {
+    angular.module('AvgGradeApp').factory('modelTransformer', function modelTransformerFactory() {
 
         var transformObject = function (jsonResult, constructor) {
             var model = new constructor();

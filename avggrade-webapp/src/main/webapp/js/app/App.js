@@ -1,12 +1,12 @@
 ﻿(function () {
-    angular.module('InvoiceApp', 
+    angular.module('AvgGradeApp', 
     		['ngResource', 'ngRoute', 'ngFileUpload', 'ngCookies', 'ngSanitize', 'ui.bootstrap', 'ui.router', 'ui.select', 'angularSpinner'])
         .config(function ($stateProvider) {
             $stateProvider
-                .state('invoice', {
-                    templateUrl: 'js/app/templates/invoice.html',
-                    controller: 'InvoiceCtrl',
-                    url: '/invoice'
+                .state('avggrade', {
+                    templateUrl: 'js/app/templates/avggradesection.html',
+                    controller: 'AvgGradeCtrl',
+                    url: '/avggrade'
                 })
             ;
         })
@@ -14,7 +14,7 @@
             $rootScope.$on(events.message._SEND_TO_PROCESS_, function (event, data) {
                 var files = data[0];
                 if (files.length > 1) {
-                    $rootScope.$broadcast(events.message._SEND_TO_PROCESS_FAILED_, ["Ainult 1 fail korraga palun"]);
+                    $rootScope.$broadcast(events.message._SEND_TO_PROCESS_FAILED_, ["1 file at a time please"]);
                 } else {
                     ExtractionService.submit(files);
                 }
@@ -31,6 +31,6 @@
             $rootScope.$on(events.message._FILE_UPLOADED_, function (event, data) {
                 appData.extractionInProgress = true;
             });
-            $state.go('invoice');
+            $state.go('avggrade');
         });
 })();

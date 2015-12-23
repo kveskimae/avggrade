@@ -1,5 +1,5 @@
 ﻿(function () {
-    angular.module('InvoiceApp').factory('ExtractionService', function ExtractionServiceFactory($rootScope, events, appData, Upload) {
+    angular.module('AvgGradeApp').factory('ExtractionService', function ExtractionServiceFactory($rootScope, events, appData, Upload) {
         return {
             submit: function (files) {
                 if (files && files.length) {

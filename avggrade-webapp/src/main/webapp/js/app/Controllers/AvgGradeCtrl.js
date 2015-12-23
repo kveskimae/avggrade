@@ -1,5 +1,5 @@
 ﻿﻿(function () {
-    angular.module('InvoiceApp').controller('InvoiceCtrl', function ($http, $timeout, $rootScope, $scope, $controller, $cookies, $cookieStore, events) {
+    angular.module('AvgGradeApp').controller('AvgGradeCtrl', function ($http, $timeout, $rootScope, $scope, $controller, $cookies, $cookieStore, events) {
         angular.extend(this, $controller('BaseCtrl', {$scope: $scope}));
         Array.prototype.move = function (old_index, new_index) {
             if (new_index >= this.length) {

@@ -15,10 +15,10 @@
 
     var appDataInstance = new AppModel();
 
-    angular.module('InvoiceApp')
+    angular.module('AvgGradeApp')
         .value('appData', appDataInstance);
 
-    angular.module('InvoiceApp').factory('ExtractionSuccessResult', function () {
+    angular.module('AvgGradeApp').factory('ExtractionSuccessResult', function () {
         var ExtractionSuccessResult = function () {
             var self = this;
             self.accountNr = null;
