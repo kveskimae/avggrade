@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+	<student>
+		<name>Urmas Kask</name>
+		<courses>
+			<course>
+				<code>M01</code>
+				<credits>12</credits>
+				<grade>4</grade>
+			</course>
+			<course>
+				<code>M04</code>
+				<credits>6</credits>
+				<grade>3</grade>
+			</course>
+			<course>
+				<code>M03</code>
+				<credits>6</credits>
+				<grade>5</grade>
+			</course>
+			<course>
+				<code>M02</code>
+				<credits>3</credits>
+				<grade>2</grade>
+			</course>
+			<course>
+				<code>M08</code>
+				<credits>6</credits>
+				<grade>4</grade>
+			</course>
+		</courses>
+	</student>
+	<student>
+		<name>Mari Maasikas</name>
+		<courses>
+			<course>
+				<code>F07</code>
+				<credits>3</credits>
+				<grade>4</grade>
+			</course>
+			<course>
+				<code>F10</code>
+				<credits>6</credits>
+				<grade>5</grade>
+			</course>
+			<course>
+				<code>F11</code>
+				<credits>6</credits>
+				<grade>3</grade>
+			</course>
+			<course>
+				<code>D78</code>
+				<credits>3</credits>
+				<grade>4</grade>
+			</course>
+		</courses>
+	</student>
+</students>
