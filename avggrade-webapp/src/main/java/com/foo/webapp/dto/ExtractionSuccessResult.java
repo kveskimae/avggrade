@@ -1,16 +1,16 @@
 package com.foo.webapp.dto;
 
+import java.util.List;
+
+import com.foo.logic.StudentWithAvgGrade;
+
 public class ExtractionSuccessResult implements IExtractionResult {
 	
-	/**
-	 * Just a placeholder for the moment
-	 */
-	public final String text;
+	public final List<StudentWithAvgGrade> students;
 	
-	public ExtractionSuccessResult(final String text) {
+	public ExtractionSuccessResult(final List<StudentWithAvgGrade> students) {
 		super();
-		this.text = text;
+		this.students = students;
 	}
-	
 
 }

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema id="students" xmlns="http://www.foo.com/StudentsListSchema"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.foo.com/StudentsListSchema"
+	xmlns:tns="http://www.foo.com/StudentsListSchema">
+	<!-- <xs:choice minOccurs="0" maxOccurs="unbounded" ref="item"> </xs:choice> 
+		<xs:simpleType name="ooo"> <xs:restriction base="xs:string" /> </xs:simpleType> 
+		<xs:element name="root"> <xs:complexType> <xs:sequence> <xs:element name="xxx" 
+		type="ooo" minOccurs="0" maxOccurs="unbounded" /> </xs:sequence> </xs:complexType> 
+		</xs:element> -->
+	<xs:element name="students">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="student" type="student" minOccurs="0"
+					maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="course">
+		<xs:sequence>
+			<xs:element name="code" type="xs:string" minOccurs="0"
+				maxOccurs="1" />
+			<xs:element name="credits" type="xs:int" minOccurs="1"
+				maxOccurs="1" />
+			<xs:element name="grade" type="xs:int" minOccurs="1"
+				maxOccurs="1" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="student">
+		<xs:sequence>
+			<xs:element name="name" type="xs:string" minOccurs="1"
+				maxOccurs="1" />
+					
+				<xs:element name="course" type="course" minOccurs="0"
+							maxOccurs="unbounded" />
+			
+		</xs:sequence>
+	</xs:complexType>
+
+</xs:schema>

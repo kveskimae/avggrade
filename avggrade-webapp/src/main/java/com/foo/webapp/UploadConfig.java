@@ -11,6 +11,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupp
 
 import com.foo.logic.AvgCalculator;
 import com.foo.webapp.controller.ControllerPackageMarker;
+import com.foo.webapp.xml.StudentsMarshaler;
 
 @Configuration
 @ComponentScan(basePackageClasses = { ControllerPackageMarker.class })
@@ -33,6 +34,11 @@ public class UploadConfig extends WebMvcConfigurationSupport {
 	@Bean
 	public AvgCalculator fileSaver() {
 		return new AvgCalculator();
+	}
+
+	@Bean
+	public StudentsMarshaler marshaler() {
+		return new StudentsMarshaler();
 	}
 
 }
