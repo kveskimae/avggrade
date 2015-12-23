@@ -3,22 +3,22 @@
 	<student>
 		<name>Tarmo Tamm</name>
 		<course>
-			<code>S2C3</code>
+			<code>T1</code>
 			<credits>6</credits>
 			<grade>2</grade>
 		</course>
 		<course>
-			<code>S2C2</code>
+			<code>T5</code>
 			<credits>6</credits>
 			<grade>5</grade>
 		</course>
 		<course>
-			<code>S2C1</code>
+			<code>T3</code>
 			<credits>12</credits>
 			<grade>4</grade>
 		</course>
 		<course>
-			<code>M01</code>
+			<code>T8</code>
 			<credits>12</credits>
 			<grade>4</grade>
 		</course>
@@ -44,19 +44,45 @@
 		</course>
 	</student>
 	<student>
-		<name>Mari Maasikas</name>
+		<name>Malle Maasikas</name>
 		<course>
-			<code>S1C3</code>
-			<credits>6</credits>
-			<grade>2</grade>
-		</course>
-		<course>
-			<code>S1C2</code>
+			<code>O77</code>
 			<credits>6</credits>
 			<grade>5</grade>
 		</course>
 		<course>
-			<code>S1C1</code>
+			<code>O72</code>
+			<credits>6</credits>
+			<grade>4</grade>
+		</course>
+	</student>
+	<student>
+		<name>Andres Armas</name>
+		<course>
+			<code>O77</code>
+			<credits>6</credits>
+			<grade>5</grade>
+		</course>
+		<course>
+			<code>O72</code>
+			<credits>6</credits>
+			<grade>4</grade>
+		</course>
+	</student>
+	<student>
+		<name>Mari Maasikas</name>
+		<course>
+			<code>U11</code>
+			<credits>6</credits>
+			<grade>2</grade>
+		</course>
+		<course>
+			<code>U16</code>
+			<credits>6</credits>
+			<grade>5</grade>
+		</course>
+		<course>
+			<code>U21</code>
 			<credits>12</credits>
 			<grade>4</grade>
 		</course>
@@ -78,6 +104,57 @@
 		<course>
 			<code>D78</code>
 			<credits>3</credits>
+			<grade>4</grade>
+		</course>
+	</student>
+	<student>
+		<name>Kaido Kask</name>
+		<course>
+			<code>O77</code>
+			<credits>6</credits>
+			<grade>2</grade>
+		</course>
+		<course>
+			<code>O72</code>
+			<credits>6</credits>
+			<grade>1</grade>
+		</course>
+		<course>
+			<code>O01</code>
+			<credits>12</credits>
+			<grade>0</grade>
+		</course>
+		<course>
+			<code>F07</code>
+			<credits>3</credits>
+			<grade>2</grade>
+		</course>
+		<course>
+			<code>F10</code>
+			<credits>6</credits>
+			<grade>3</grade>
+		</course>
+		<course>
+			<code>F11</code>
+			<credits>6</credits>
+			<grade>1</grade>
+		</course>
+		<course>
+			<code>D78</code>
+			<credits>3</credits>
+			<grade>3</grade>
+		</course>
+	</student>
+	<student>
+		<name>Peeter Peet</name>
+		<course>
+			<code>O77</code>
+			<credits>6</credits>
+			<grade>5</grade>
+		</course>
+		<course>
+			<code>O72</code>
+			<credits>6</credits>
 			<grade>4</grade>
 		</course>
 	</student>

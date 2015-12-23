@@ -21,15 +21,13 @@
 					<th class="text-center">Weighted average grade</th>
 				</tr>
 			</thead>
-			
-			
-			    <tbody ng-repeat="student in appData.result.students">
-        <tr>
-            <td>{{student.name}}</td>
-            <td>{{student.weightedAvgGrade | number:2}}</td>
-        </tr>
-    </tbody>
-    
+			<tbody ng-repeat="student in appData.result.students | orderBy:['weightedAvgGrade','name']">
+				<tr>
+					<td>{{student.name}}</td>
+					<td>{{student.weightedAvgGrade | number:2}}</td>
+				</tr>
+			</tbody>
+
 		</table>
 	</div>
 	<div class="jumbotron col-md-6 col-md-offset-3 invoice-upload-section">
