@@ -4,6 +4,14 @@
 
 This application calculates weighted average grade for students
 
+## Running
+
+Web application can be built with Maven into web archive (WAR) file and deployed into a Java web container like Tomcat, or any other.
+
+Alternative is to use Maven Jetty plugin from command line inside web application project, for example:
+
+	/workspace/avggrade/avggrade-webapp $ mvn jetty:run
+
 ## Design
 
 This is a Maven project with outside dependencies, written using Spring and Angular frameworks together with some additional libraries. 
@@ -24,9 +32,9 @@ Java classes in package "com.foo.logic.gen" are generated from *[parent folder]/
 
 ### Web application
 
-Web application is a Spring Web MVC project. It needs to be built with Maven into a WAR-file and then deployed into a Java web container like Tomcat, or any other.
+Web application is a Spring Web MVC project. 
 
-User provides students list as an XML file. This file gets posted to *FileUploadController* , located at [domain]/rest/upload, e.g. http://localhost:8080/invoice-webapp/rest/upload . 
+User provides students list as an XML file. This file gets posted to *FileUploadController* , located at [domain]/rest/upload, e.g. http://localhost:8080/avggrade-webapp/rest/upload . 
 
 The uploading of students list file is done by Angular application that runs inside web browser. The state of upload controller can be tested by querying this same file upload controller location with GET operation. The result should be JSON object containing text "Upload controller is up and running".
 

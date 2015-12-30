@@ -19,7 +19,7 @@
 			value="5" />
 		<param
 			name="file"
-			value="${catalina.home}/logs/upload.log" />
+			value="upload.log" />
 		<layout class="org.apache.log4j.EnhancedPatternLayout">
 			<!-- %d{ISO8601}{GMT} -->
 			<param
